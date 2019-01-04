@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Tip Calculator</title>
+  <meta name="description" content="Tip Calculator">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="app-wrapper">
+      <div id="app-header">
+        <h1>Tip Calculator</h1>
+      </div>
+      <div id="app-body">
+        <p class="body-text" id="cost">How much was your bill?</p>
+
+        <input type="number" id="input-cost" step="0.01" min="0.01">
+
+        <p class="body-text" id="split">Are you splitting the bill?</p>
+        <p class="body-subtext">Bills can be split between 1-8 people</p>
+        <form>
+          <select name="split">
+            <option value="1">No Split/I'm eating alone</option>
+            <option value="2">Split two ways</option>
+            <option value="3">Split three ways</option>
+            <option value="4">Split four ways</option>
+            <option value="5">Split five ways</option>
+            <option value="6">Split six ways</option>
+            <option value="7">Split seven ways</option>
+            <option value="8">Split eight ways</option>
+          </select>
+        </form>
+
+        <p class="body-text" id="service">How was the service you received</p>
+        <div id="serviceLevel">
+          <label for="0">Unsatisfactory</label><input type="radio" name="service" value="0">
+          <label for="1">Satisfactory</label><input type="radio" name="service" value="1">
+          <label for="2">Good</label><input type="radio" name="service" value="2" checked>
+          <label for="3">Excellent</label><input type="radio" name="service" value="3">
+          <label for="4">Spectacular</label><input type="radio" name="service" value="4">
+        </div>
+        <br>
+
+
+        <button id="calculate" onclick="tipCalc()">Calculate!</button>
+
+        <p id="output"></p>
+        <p id="share"></p>
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
