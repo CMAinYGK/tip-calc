@@ -1,7 +1,7 @@
-var cost = document.getElementById("input-cost").value;
-var split = document.getElementById("split").value;
-var service = document.querySelector('input[name="service"]:checked').value;
-var tipValue =
+let cost = document.getElementById("input-cost").value;
+let split = document.getElementById("split").value;
+let service = document.querySelector('input[name="service"]:checked').value;
+let tipValue =
   [
     1.10,
     1.15,
